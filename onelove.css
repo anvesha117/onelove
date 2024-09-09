@@ -1,0 +1,460 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.banner{
+    background-image: url(/assests/images/photo_2024-07-23_23-25-26.jpg);
+    background-size:cover;
+    height: 90vh;
+    background-position: center;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    
+    color: white;
+    text-align: center;
+}
+.banner-text{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.banner-subheading{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+
+}
+.logo {
+    width: 200px;
+    padding: 10px;
+   
+
+}
+.color{
+    background-color: #292828;
+}
+.heading{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+
+
+.card-location{
+    border: 1px solid rgb(191, 189, 189);
+    background-color: rgb(191, 189, 189);
+  
+}
+
+.card-location:hover{
+      box-shadow: 0 0 10px rgba(75, 75, 75, 0.312) !important;
+    transition: 0.5s;
+}
+.analytics-flex{
+    display: flex;
+    justify-content: left;
+}
+    
+    .flex-image {
+        border-radius: 20px;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .flex-heading {
+        font-weight: 500;
+        text-align: left;
+        padding-top: 20px;
+        font-size: larger;
+        font-family: 'Lobster', cursive;
+    }
+    
+    .flex-title {
+        font-weight: 350;
+    }
+    
+    .links {
+        text-decoration: none; 
+        color: black;
+    }
+    
+    .flex-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(172, 175, 176);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        font-family: 'Lobster', cursive;
+    }
+    
+    .flex-location {
+        border: 1px solid #838282;
+        background-color: #f3fcff;
+    }
+    
+    .flex-location:hover {
+        box-shadow: 0 0 10px rgba(75, 75, 75, 0.312) !important;
+        transition: 0.5s;
+    }
+    .flex{
+        padding: 30px;
+    }
+    .profile-section {
+        display: flex;
+        align-items: flex-start; 
+        margin: 20px 0; 
+        background-color: #9c9b9b; 
+        border-radius: 10px; 
+        padding: 20px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        flex-wrap: wrap;
+    }
+    
+    .profile-image {
+        flex: 0 0 250px; 
+        margin-right: 20px; 
+        
+    }
+    
+    .profile-image img {
+        width: 100%; 
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover; 
+    }
+    
+    .profile-text {
+        flex: 1; }
+    
+    .profile-text h2 {
+        margin-top: 0; 
+        font-size: 1.5em; 
+        color: #333; 
+    }
+    
+    .profile-text p {
+        color: #fffbfb;
+        text-align: center; 
+    }
+    .card{
+        height: 100%;
+    }
+    .btn {
+        background-color: #333;
+        color:grey;
+        border: none;
+        box-shadow: none;
+        
+    }
+    .custom{
+        text-decoration: none;
+        color:#292828;
+    }
+    .gallery {
+        column-count: 3; /* Number of columns */
+        column-gap: 1rem; /* Space between columns */
+      }
+      
+      .gallery img {
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .gallery img:hover {
+        transform: scale(1.1); /* Zoom effect on hover */
+        filter: brightness(0.8); /* Slight darkening effect on hover */
+      }
+      
+      .heading {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #040404; /* White text for contrast */
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        font-family: 'Playfair Display', serif; /* Elegant font */
+        text-transform: uppercase; /* Adds a touch of sophistication */
+      }
+      
+      .heading::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(169, 169, 169, 0.7), rgba(169, 169, 169, 0));
+        background-size: 200% 200%;
+        filter: blur(4px);
+        z-index: -1;
+        animation: glow 3s ease-in-out infinite;
+      }
+      
+      @keyframes glow {
+        0%, 100% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+      }
+      
+      .heading span {
+        display: inline-block;
+        position: relative;
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0% {
+          text-shadow: 0 0 5px rgba(169, 169, 169, 0.5);
+        }
+        50% {
+          text-shadow: 0 0 15px rgba(169, 169, 169, 1);
+        }
+        100% {
+          text-shadow: 0 0 5px rgba(169, 169, 169, 0.5);
+        }
+      }
+      /* Container styling */
+.container-fluid {
+    padding: 50px;
+  }
+  
+  /* Profile section styling */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Profile image styling */
+  .profile-image {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 200px; /* Adjust to a larger size */
+    height: 200px; /* Adjust to a larger size */
+    border-radius: 15px; /* Slightly rounded corners */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  /* Profile text styling */
+  .profile-text {
+    flex: 2;
+    padding: 10px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in effect */
+  }
+  
+  .profile-text h2 {
+    font-size: 2rem;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 10px;
+    animation: glowingText 1.5s ease-in-out infinite; /* Glowing text effect */
+  }
+  
+  .profile-text p {
+    color: #dcdcdc; /* Light grey color for better visibility */
+    line-height: 1.6;
+    animation: fadeInUp 2s ease-in-out forwards; /* Fade-in and slide-up effect */
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Glowing text animation */
+  @keyframes glowingText {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 105, 180, 0.7);
+    }
+    50% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 105, 180, 1);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 105, 180, 0.7);
+    }
+  }
+  
+  /* Fade-in and slide-up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-top {
+    transition: transform 0.5s ease;
+  }
+
+  .card-img-top:hover {
+    transform: scale(1.1);
+  }
+
+  .card-body {
+    background-color: #928e8e;
+    color: #f0f0f0;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: left 0.5s ease;
+  }
+
+  .card-title:hover::after {
+    left: 100%;
+  }
+
+  .card-text {
+    color: #dcdcdc;
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #777;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-text {
+    animation: fadeInUp 1s ease-out;
+  }
+    
+    @media (max-width: 768px) {
+        .banner-text {
+            font-size: 2rem; 
+        }
+    
+        .banner-subheading {
+            font-size: 1rem; 
+        }
+    
+        .heading {
+            font-size: 2.5rem;
+        }
+        .flex {
+            padding: 15px; 
+        }
+        .flex-heading {
+            font-size: 1.2rem; 
+        }
+        .profile-section {
+            padding: 10px; 
+        }
+    }
+    .video-slider-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .video-slider {
+        display: flex;
+        width: 100%;
+        animation: slide 15s linear infinite;
+      }
+  
+      .video-item {
+        flex: 1 0 25%; /* Show 4 videos at a time, adjust as needed */
+        box-sizing: border-box;
+      }
+  
+      .video-item video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+  
+      @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 767px) {
+        .video-item {
+          flex: 1 0 100%; /* Show one video at a time on small screens */
+        }
+      }
+  
+      @media (min-width: 768px) {
+        .video-item {
+          flex: 1 0 25%; /* Show four videos at a time on larger screens */
+        }
+      }
+   
